@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: #1b2433;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(27, 36, 51, 0.6);
+          box-shadow: 0px 10px 15px 0px rgba(27, 36, 51, 0.6);
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+#logo {
+  font-family: "Aquire" !important;
+  color: #dc96a2;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Lobster" !important;
+}
+
+body {
+  background: #e4e9e7;
+  min-height: 100vh;
+  font-family: "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kick-pad,
+.hihat-pad,
+.snare-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  background-color: #999;
+  border-radius: 50%;
+}
+
+.pad {
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+.hihat,
+.kick,
+.snare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hihat-track,
+.kick-track,
+.snare-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.kick-pad.active,
+.hihat-pad.active,
+.snare-pad.active {
+  background: #ec5a5a;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.controls button {
+  border: none;
+  outline: none;
+  background: #1b2433;
+  color: #dc96a2;
+  cursor: pointer;
+  width: 5%;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.play {
+  border: none;
+  outline: none;
+  background: #1b2433;
+  color: #dc96a2;
+  cursor: pointer;
+  width: 5%;
+  height: 6rem;
+  border-radius: 5px;
+  font-size: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #3f3f3f;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */
