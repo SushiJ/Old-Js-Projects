@@ -5,4 +5,4 @@
 
 - HTML 
 - CSS
--Vanilla Javascript
+- Vanilla Javascript
