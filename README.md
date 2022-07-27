@@ -7,7 +7,7 @@
 - Number game
 - Task manager
 - Weather App
-- Book record keeper https://github.com/SushiJ/simple_book_record
+- [Book record keeper](https://github.com/SushiJ/simple_book_record)
 
 ## Tools
 - HTML 
